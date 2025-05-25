@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="ticket.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <title>BookNow.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header">
+                  <i class="fa-solid fa-ticket"></i>
+        <h1>BookNow</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    
+                     <a href="home.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-house"></i>Home</li>
+                   </div> 
+                   </a>
+                 <a href="moviesearch.html">  <div class="forhover">
+                       <li> <i class="fa-solid fa-film"></i>Movies</li>
+                   </div></a>
+                   <a href="movieqoutes.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-quote-left"></i>Random Qoutes</li>
+                   </div>
+                   </a>
+                   <a href="booking.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-ticket"></i>Book Tickets</li>
+                   </div>
+                   </a>
+                   <a href="ticket.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-address-card"></i>My Bookings</li>
+                   </div>
+                   </a>
+                  
+                </ul>
+            </div>
+            <div class="userinfo">
+               
+                <p id="username"></p>        
+            </div>
+        </div>
+    <div class="right" id="block">
+        <div class="ticket">
+            <img src="" id="finalmovie" alt="movie">
+            <div class="text">
+                <h1 id="final"> </h1>
+                <p class="info1"></p>
+                <p class="info2"> </p>
+                <p class="info3"></p>
+                <p class="info4"></p>
+                <p class="seats"></p>
+               
+                
+            </div>
+            <div class="code">
+               <input type="text" id="emailtosend" placeholder="" class="tosend1">
+               <button id="codegenrate">Generate QR Code</button>
+               <div id="qrcode"></div>
+            </div>
+        </div>
+    </div>
+    <button class="tosend">Download</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="code.js"></script>
+   
+</body>
+</html>

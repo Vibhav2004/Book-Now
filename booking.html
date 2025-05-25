@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="booking.css">
+      <script  src="variable.js" type="module"></script> 
+    <title>BookNow.com</title>
+</head>
+<body>
+    <div class="container">
+       <div class="left">
+            <div class="header">
+                  <i class="fa-solid fa-ticket"></i>
+        <h1>BookNow</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="home.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-house"></i>Home</li>
+                   </div> 
+                   </a>
+                 <a href="moviesearch.html">  <div class="forhover">
+                       <li> <i class="fa-solid fa-film"></i>Movies</li>
+                   </div></a>
+                   <a href="movieqoutes.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-quote-left"></i>Random Qoutes</li>
+                   </div>
+                   </a>
+                   <a href="booking.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-ticket"></i>Book Tickets</li>
+                   </div>
+                   </a>
+                   <a href="ticket.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-address-card"></i>My Bookings</li>
+                   </div>
+                   </a>
+                   
+                </ul>
+            </div>
+            <div class="userinfo">
+               
+                <p id="username"></p>        
+            </div>
+        </div>
+        <div class="right">
+            <div class="seats">
+                <i class="fa-solid fa-xmark" id="crosses"></i>
+                    
+                     
+
+          
+
+
+            </div>
+            <div class="currentbooking">
+               <img src="" id="bookingmovie" alt="movie image">
+               <div class="rightside">
+                <h1 id="moviename"></h1>
+                <p class="des7"></p>
+                <p class="des8"></p>
+                <p class="des9"></p>
+                <p class="plot2"></p>
+                <form>
+                    <div class="leftside1">
+                        <input placeholder="Name" type="text" id="firstname">
+                        <input placeholder="Last Name" type="text" id="lastname">
+                        
+                    </div>
+                    <div class="rightside1">
+                        <input placeholder="Phone Number" type="number" id="phonenumber">
+                        <input placeholder="Email" type="email" id="email">
+                    </div>
+                    <div class="buttonbox">
+                        <button id="selectseats">Select seats</button>
+                        <button id="detailsave">save</button>
+                        <button id="confirmbooking"><a href="ticket.html">Confirm booking</a></button>
+                    </div>
+                    <div class="seatno">
+                        <p id="seatno"></p>
+                    </div>
+                </form>
+               </div>
+
+            </div>
+        </div>
+    </div>
+    
+<script type="module" src="booking.js"></script>
+ 
+</body>
+</html>

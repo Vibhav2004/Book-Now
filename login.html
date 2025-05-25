@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booknow.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <i class="fa-solid fa-ticket"></i>
+        <h1>BookNow</h1>
+    </div>
+    <div class="container">
+
+        <div class="left">
+           <h2>Login To Your Account</h2>
+            <form   name="loginform">
+                
+                <input placeholder="Email" type="email" name="email"required id="emailad">
+                <input placeholder="Password" type="password" name="password" required id="password">
+                <a href="www.google.com">forgot password</a>
+                <button  class="btn1" id="loginbut"> <a href="" id="links"> Login </a></button>
+            </form>
+        </div>
+        <div class="right">
+           <h2>New Here</h2>
+           <p>register now to be the part of our community</p>
+           <button><a href="register.html"> Register Now </a></button>
+            
+        </div>
+    </div>
+    <script type="module">
+        const login=document.querySelector("#loginbut")
+        const emailad=document.querySelector("#emailad")
+        const password=document.querySelector("#password")
+        login.addEventListener("click",(e)=>{
+            e.preventDefault()
+          let emailvalue=emailad.value
+          const passwordvalue=password.value
+          localStorage.setItem("emailvalues", emailvalue);
+
+  fetch(`https://script.google.com/macros/s/AKfycbxi8Y9N77yQIxjBsVUFVdklDf8kaIHrLPbZWVl20uno37pxWh8aSWRlL6k5hB70QtMFCA/exec?email=${emailvalue}`)
+  .then(resposne=>resposne.json())
+  .then(result=>{
+    const data=result.data
+    console.log(data);
+    
+    if(!data || data.length === 0)
+  {
+    alert("Account does not exist in the system")
+  }
+   else if(data[0].email===emailvalue&& data[0].password===passwordvalue)
+   {
+    
+     window.location.href = "home.html";
+    
+
+   }
+   else{
+    alert("Incorrect password or email")
+   }
+  
+    
+     
+  })
+
+          console.log(emailvalue, passwordvalue);
+          
+        })
+        
+    </script>
+</body>
+</html>

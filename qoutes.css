@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Smooch+Sans:wght@100..900&display=swap');
+.buttongen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#but{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color:  #ff4f4f;
+    border: none;
+    color: #000000;
+    font-family: "Smooch sans";
+    font-size: 25px;
+    transition: all 0.3s ease-in;
+}
+#but:hover{
+     background-color: #e8db7d;
+}
+.area{
+    display: block;
+    margin-top: 40px;
+    width: 1200px;
+    height: auto;
+    margin-left: 70px;
+    color: #e8db7d;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 1px solid #e8db7d;
+}
+#qoute{
+    font-family: "Oswald";
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+#character{
+    font-family: "Smooch sans";
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 900px;
+    margin-top: 30px;
+}

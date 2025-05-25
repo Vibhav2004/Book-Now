@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css"> 
+    <script src="variable.js" type="module"></script>  
+    <title>BookNow.com</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header">
+                  <i class="fa-solid fa-ticket"></i>
+        <h1>BookNow</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-house"></i>Home</li>
+                   </div> 
+                 <a href="moviesearch.html">  <div class="forhover">
+                       <li> <i class="fa-solid fa-film"></i>Movies</li>
+                   </div></a>
+                   <a href="movieqoutes.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-quote-left"></i>Random Qoutes</li>
+                   </div>
+                   </a>
+                   <a href="booking.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-ticket"></i>Book Tickets</li>
+                   </div>
+                   </a>
+                   <a href="ticket.html">
+                   <div class="forhover">
+                       <li> <i class="fa-solid fa-address-card"></i>My Bookings</li>
+                   </div>
+                   </a>
+                   
+                </ul>
+            </div>
+            <div class="userinfo">
+               
+                <p id="username"></p>        
+            </div>
+        </div>
+        <div class="right">
+            <div class="moviebox flex">
+               
+                <img src=""  alt="" id="selectemovie">
+                <div>
+                    <h2 id="heading"></h2>
+                    <p class="des1" id="des1"> </p>
+                    <p class="des2" id="des2"></p>
+                    <p class="des3" id="des3"></p>
+                    <button id="bookticket"><a href="booking.html">booknow</a></button>
+                </div>
+              
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                <input placeholder="search" type="text" id="searchbox">
+            </div>
+            
+            <div class="banner" id="banner" style="overflow-x: scroll;">
+               
+                <img src="banner/2 fast 2 furious.jpg" class="img1">
+                <img src="banner/download.jpg" class="img2"img>
+                <img src="banner/Harry Potter.jpg" class="img3">
+                <img src="banner/Quotes _ Scarface.jpg" class="img6">
+                <img src="banner/download (2).jpg" class="img7">
+                <img src="banner/Psycho wallpaper for PC.jpg" class="img4">
+                <img src="banner/The Batman - Edit.jpg" class="img5">
+                <img src="banner/Annabelle Creation Logo.jpg" class="img8">
+                <img src="banner/The Conjuring 2 Logo.jpg" class="img9">
+            </div>
+            <div class="category">
+                <button value="All" >All</button>
+                <button value="English">English</button>
+                <button value="Hindi">Hind</button>
+                <button value="Anime">Anime</button>
+            </div>
+<div class="area">
+            
+            
+                
+</div>
+        </div>
+    </div>
+    <script    src="app.js">
+        
+    </script>
+    <script src="app3.js" type="module"></script>
+    
+    
+</body>
+</html>
